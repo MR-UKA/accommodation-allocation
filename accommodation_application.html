@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Accommodation Application</title>
+</head>
+<body>
+    <h1>Accommodation Application</h1>
+    <form method="POST">
+
+       <fieldset>
+<label for="special_needs">Do you have any special needs?</label>
+        <select name="special_needs" id="special_needs">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+<p>
+    <fieldset>
+        <label for="gender">Gender:</label><br><br>
+        <input type="radio" name="gender" id="male" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="Female">
+        <label for="female">Female</label>
+    </fieldset>
+</p>
+
+<fieldset>
+
+    <label for="room_preference">Room Preference:</label><br><br>
+    <input type="radio" name="room_preference" id="single" value="Single">
+    <label for="single">Single</label>
+    <input type="radio" name="room_preference" id="shared" value="Shared">
+    <label for="shared">Shared</label>
+
+</fieldset>
+
+
+        <p><button type="submit">Submit</button></p>
+       </fieldset>
+        
+    </form>
+</body>
+</html>

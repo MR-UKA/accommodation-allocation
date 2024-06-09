@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>personality-test</title>
+ 
+    <link rel="static/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <h1>Please Take The Personality Test To continue</h1>
+    <form class="container" method="POST">
+        <fieldset>
+
+
+            {% for question in questions %}
+            <div>
+                <label for="{{ question.question }}">{{ question.question }}</label>
+                <select name="{{ question.question }}" id="{{ question.question }}">
+                    {% for option in question.options %}
+                    <option value="{{ option }}">{{ option }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            {% endfor %}
+            <button btn-primary type="submit">Submit</button>
+
+        </fieldset>
+
+    </form>
+</body>
+</html>
